@@ -1,0 +1,465 @@
+Tue Jul  3 17:10:07 CEST 2018
+Log_1  : ====================================================
+Log_1  : |     spiselectscw Version  4.02      Mar. 2017    |
+Log_1  : |**************************************************|
+Log_1  : |  select ScW and Revolutions from database        |
+Log_1  : |  Developped by H. Halloin  (halloin@mpe.mpg.de)  |
+Log_1  : |  Please contact me for questions/problems        |
+Log_1  : ====================================================
+Log_1  :  spiselectscw : loads parameters
+Log_1  : ++++++++++++++++++++++++++ SPISlctScWPar::get_par begins +++++++++++++++++++++++
+Log_1  : ++++++++++++++++++++++++++ SPISlctScWPar::print_par begins +++++++++++++++++++++++
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : spiselectscw v4.02 input parameters : 
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Debugging flag                     =  0
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Observation group identifier       =  crab FoV
+Log_1  :  SPISlctScWPar::print_par : Observation identifier             =  crab FoV
+Log_1  :  SPISlctScWPar::print_par : Scientific purpose                 =  crab FoV
+Log_1  :  SPISlctScWPar::print_par : Object                             =  crab FoV
+Log_1  :  SPISlctScWPar::print_par : Observer                           =  Thomas Siegert
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Users input ScW database           =  None
+Log_1  :  SPISlctScWPar::print_par : Number of revolutions databases    =  3
+Log_1  :  SPISlctScWPar::print_par : Selected revolutions databases     =  0043 0044 0045 
+Log_1  :  SPISlctScWPar::print_par : Path to revolutions databases      =  /afs/ipp-garching.mpg.de/mpe/gamma/instruments/integral/data/databases/scw_params/revolutions.new
+Log_1  :  SPISlctScWPar::print_par : Revolutions databases prefix       =  ScWDataBase_rev
+Log_1  :  SPISlctScWPar::print_par : Off line detectors file            =  spi_off_det.fits
+Log_1  :  SPISlctScWPar::print_par : Off line dead ratio                =  0
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Read/Create mode for ScW database  =  Create
+Log_1  :  SPISlctScWPar::print_par : Output ScW database                =  scw.fits.gz
+Log_1  :  SPISlctScWPar::print_par : Output ScW list                    =  scw.list
+Log_1  :  SPISlctScWPar::print_par : Output ScW base directory          =  scw
+Log_1  :  SPISlctScWPar::print_par : Output revolution OG list          =  og_list
+Log_1  :  SPISlctScWPar::print_par : Output sel. frac. for rev list     =  0.000000
+Log_1  :  SPISlctScWPar::print_par : Path prefix to preprocessed rev.   =  /afs/ipp-garching.mpg.de/mpe/gamma/instruments/integral/user_ref/Private_low/
+Log_1  :  SPISlctScWPar::print_par : Path suffix to preprocessed rev.   =  _std
+Log_1  :  SPISlctScWPar::print_par : Name of the OG in the prep. rev.   =  og_spi.fits
+Log_1  :  SPISlctScWPar::print_par : Name of the SWG idx in the p. rev. =  None
+Log_1  :  SPISlctScWPar::print_par : Output observation group DOL       =  og_spi.fits
+Log_1  :  SPISlctScWPar::print_par : Output energy boundaries DOL       =  spi/energy_boundaries.fits.gz
+Log_1  :  SPISlctScWPar::print_par : Output pointings DOL               =  spi/pointing.fits.gz
+Log_1  :  SPISlctScWPar::print_par : Output good time intervals DOL     =  spi/gti.fits.gz
+Log_1  :  SPISlctScWPar::print_par : Output detectors spectra DOL       =  spi/evts_det_spec.fits.gz
+Log_1  :  SPISlctScWPar::print_par : Output dead time DOL               =  spi/dead_time.fits.gz
+Log_1  :  SPISlctScWPar::print_par : Output SWG index DOL               =  None
+Log_1  :  SPISlctScWPar::print_par : Attach the SwG index to the group  =  No
+Log_1  :  SPISlctScWPar::print_par : Output exposure map DOL            =  expo_crab.fits
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Build exposure map from            =  poinings + dead time files
+Log_1  :  SPISlctScWPar::print_par : Exposure map coord sys             =  Galactic
+Log_1  :  SPISlctScWPar::print_par : Exposure map projection            =  AIT
+Log_1  :  SPISlctScWPar::print_par : Exposure minimum latitude          =  -179.500 deg
+Log_1  :  SPISlctScWPar::print_par : Exposure maximum latitude          =  179.500 deg
+Log_1  :  SPISlctScWPar::print_par : Exposure latitude binning          =  1.000 deg
+Log_1  :  SPISlctScWPar::print_par : Exposure latitude ref pixel        =  middle
+Log_1  :  SPISlctScWPar::print_par : Exposure minimum longitude         =  -89.500 deg
+Log_1  :  SPISlctScWPar::print_par : Exposure maximum longitude         =  89.500 deg
+Log_1  :  SPISlctScWPar::print_par : Exposure longitude binning         =  1.000 deg
+Log_1  :  SPISlctScWPar::print_par : Exposure longitude ref pixel       =  middle
+Log_1  :  SPISlctScWPar::print_par : Exposure longitude of the pole     =  180.000 deg
+Log_1  :  SPISlctScWPar::print_par : Exposure latitude of the pole      =  0.000 deg
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Energy selection                   =  25.0 - 27.0, 27.0 - 29.5, 29.5 - 32.0, 32.0 - 34.5, 34.5 - 37.5, 37.5 - 40.5, 40.5 - 44.0, 44.0 - 47.5, 47.5 - 51.5, 51.5 - 56.0, 56.0 - 60.5, 60.5 - 65.5, 65.5 - 71.0, 71.0 - 77.0, 77.0 - 83.5, 83.5 - 90.5, 90.5 - 98.0, 98.0 - 106.5, 106.5 - 115.0, 115.0 - 125.0, 125.0 - 135.0, 135.0 - 146.5, 146.5 - 159.0, 159.0 - 172.0, 172.0 - 186.5, 186.5 - 202.0, 202.0 - 219.0, 219.0 - 237.5, 237.5 - 257.5, 257.5 - 279.0, 279.0 - 302.0, 302.0 - 327.5, 327.5 - 355.0, 355.0 - 384.5, 384.5 - 417.0, 417.0 - 451.5, 451.5 - 489.5, 489.5 - 530.5, 530.5 - 575.0, 575.0 - 623.0, 623.0 - 675.0, 675.0 - 731.5, 731.5 - 793.0, 793.0 - 859.5, 859.5 - 931.5, 931.5 - 1009.0, 1009.0 - 1093.5, 1093.5 - 1185.5, 1185.5 - 1284.5, 1284.5 - 1392.0 keV
+Log_1  :  SPISlctScWPar::print_par : Energy binnings                   =  2.0, 2.5, 2.5, 2.5, 3.0, 3.0, 3.5, 3.5, 4.0, 4.5, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.5, 8.5, 10.0, 10.0, 11.5, 12.5, 13.0, 14.5, 15.5, 17.0, 18.5, 20.0, 21.5, 23.0, 25.5, 27.5, 29.5, 32.5, 34.5, 38.0, 41.0, 44.5, 48.0, 52.0, 56.5, 61.5, 66.5, 72.0, 77.5, 84.5, 92.0, 99.0, 107.5 keV
+Log_1  :  SPISlctScWPar::print_par : Collect energies                  =  No
+Log_1  :  SPISlctScWPar::print_par : Elapsed time selection             =  no selection
+Log_1  :  SPISlctScWPar::print_par : Total livetime selection           =  0.00 - 1000000.00
+Log_1  :  SPISlctScWPar::print_par : Minimum livetime per detector      =  120.000 s
+Log_1  :  SPISlctScWPar::print_par : Tolerance on ScW time boundaries   =  120.000 s
+Log_1  :  SPISlctScWPar::print_par : Number of selected detectors       =  19
+Log_1  :  SPISlctScWPar::print_par : Selected detectors                 =  00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Selection on revolutions           =  0043 - 0045
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Selection on ISOC pointings        =  no selection
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Selection on ScW type              =  0 - 0
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Selection on OBT start             =  no selection
+Log_1  :  SPISlctScWPar::print_par : Selection on OBT end               =  no selection
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Selection on date start            =  no selection
+Log_1  :  SPISlctScWPar::print_par : Selection on date end              =  no selection
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Selection on start time            =  no selection
+Log_1  :  SPISlctScWPar::print_par : Selection on end time              =  no selection
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Selection on observation type      =  no selection
+Log_1  :  SPISlctScWPar::print_par : Selection on owners                =  no selection
+Log_1  :  SPISlctScWPar::print_par : General expression selection       =  (.not.gtifilter('spi_gnrl_bti.fits[1]',TStart+7E-4,'START','STOP')&& .not. gtifilter('spi_gnrl_bti.fits[1]',TEnd-7E-4,'START','STOP') && (  (orbitRevFrac < 400 && ACSRate/GeSatTot > 360) && (ACSRate/GeSatTot < 385)  || (ACSRate/GeSatTot > 360) && (ACSRate/GeSatTot < 395) ) && ( (orbitRevFrac >= 46 && orbitRevFrac < 48) || (orbitRevFrac < 75 && (GeSatTot/SgleEvtsTotRate > 6) && (GeSatTot/SgleEvtsTotRate < 10.5)) || ( (GeSatTot/SgleEvtsTotRate > 6) && (GeSatTot/SgleEvtsTotRate < 8.5))) && (TempColdPlt[2]-TempColdPlt[4] > 0.5) && (TempColdPlt[2]-TempColdPlt[4] < 0.8) && (HVDetMean > 3.2 || orbitRevFrac > 950 ) && (IREM_TC3_Rate > 1) && (IREM_S32_Rate < 5)) && (Revolution != 236 && Revolution != 354 && Revolution != 1147 && Revolution != 1149 && Revolution != 1604)
+Log_1  :  SPISlctScWPar::print_par : Backward rejection time            =  0 seconds
+Log_1  :  SPISlctScWPar::print_par : Forward rejection time             =  0 seconds
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Number of boolean selections       =  1
+Log_1  :  SPISlctScWPar::print_par :	 Boolean condition 1/1 - column name  = ReadPrpSCHK
+Log_1  :  SPISlctScWPar::print_par :	 Boolean condition 1/1 - col element  = 1
+Log_1  :  SPISlctScWPar::print_par :	 Boolean condition 1/1 - sel. value   = True
+Log_1  :  SPISlctScWPar::print_par :	 Backward rejection time                =  0 seconds
+Log_1  :  SPISlctScWPar::print_par :	 Forward rejection time                 =  0 seconds
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Number of numerical selections     =  4
+Log_1  :  SPISlctScWPar::print_par :	 Numerical condition 1/4 - column name = SPIMode
+Log_1  :  SPISlctScWPar::print_par :	 Numerical condition 1/4 - col element = 1
+Log_1  :  SPISlctScWPar::print_par :	 Numerical condition 1/4 - sel. ranges =  40.5 - 41.5
+Log_1  :  SPISlctScWPar::print_par :	 Backward rejection time                =  0 seconds
+Log_1  :  SPISlctScWPar::print_par :	 Forward rejection time                 =  0 seconds
+Log_1  :  SPISlctScWPar::print_par :	 Numerical condition 2/4 - column name = OrbitRevPhase
+Log_1  :  SPISlctScWPar::print_par :	 Numerical condition 2/4 - col element = 1
+Log_1  :  SPISlctScWPar::print_par :	 Numerical condition 2/4 - sel. ranges =  0.1 - 0.9
+Log_1  :  SPISlctScWPar::print_par :	 Backward rejection time                =  0 seconds
+Log_1  :  SPISlctScWPar::print_par :	 Forward rejection time                 =  0 seconds
+Log_1  :  SPISlctScWPar::print_par :	 Numerical condition 3/4 - column name = HVDetMean
+Log_1  :  SPISlctScWPar::print_par :	 Numerical condition 3/4 - col element = 1
+Log_1  :  SPISlctScWPar::print_par :	 Numerical condition 3/4 - sel. ranges =  2.05 - 4.5
+Log_1  :  SPISlctScWPar::print_par :	 Backward rejection time                =  0 seconds
+Log_1  :  SPISlctScWPar::print_par :	 Forward rejection time                 =  0 seconds
+Log_1  :  SPISlctScWPar::print_par :	 Numerical condition 4/4 - column name = FracGoodEvtsTot
+Log_1  :  SPISlctScWPar::print_par :	 Numerical condition 4/4 - col element = 1
+Log_1  :  SPISlctScWPar::print_par :	 Numerical condition 4/4 - sel. ranges =  0 - 0.1
+Log_1  :  SPISlctScWPar::print_par :	 Backward rejection time                =  0 seconds
+Log_1  :  SPISlctScWPar::print_par :	 Forward rejection time                 =  0 seconds
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Number of selection on X global ptg  =  1
+Log_1  :  SPISlctScWPar::print_par : X global ptg - Backward rejection time              =  0 seconds
+Log_1  :  SPISlctScWPar::print_par : X global ptg - Forward rejection time               =  0 seconds
+Log_1  :  SPISlctScWPar::print_par : X global ptg - Global reverse of the mask effect    =  No
+Log_1  :  SPISlctScWPar::print_par : X global ptg - Mask  1/1 - model name             =  Ellipse
+Log_1  :  SPISlctScWPar::print_par : X global ptg - Mask  1/1 - coordinates system     =  GALACTIC
+Log_1  :  SPISlctScWPar::print_par : X global ptg - Mask  1/1 - longitude coord.       =  -175.4425 deg
+Log_1  :  SPISlctScWPar::print_par : X global ptg - Mask  1/1 - latitude coord.        =  -5.7844 deg
+Log_1  :  SPISlctScWPar::print_par : X global ptg - Mask  1/1 - aspect angle           =  0.0000 deg
+Log_1  :  SPISlctScWPar::print_par : X global ptg - Mask  1/1 - reverse of the effect  =  No
+Log_1  :  SPISlctScWPar::print_par : X global ptg - Mask  1/1 - model parameters       =   0, 0, 20, 20
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Number of selection on Z global ptg  =  no selection
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Number of selection on X orbit ptg   =  no selection
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  :  SPISlctScWPar::print_par : Number of selection on Z orbit ptg   =  no selection
+Log_1  :  SPISlctScWPar::print_par :
+Log_1  : ++++++++++++++++++++++++++ SPISlctScWPar::print_par ends +++++++++++++++++++++++
+Log_1  : ++++++++++++++++++++++++++ SPISlctScWPar::get_par ends +++++++++++++++++++++++
+Log_1  :  spiselectscw : processing
+Log_1  :  spiselectscw_processing : 
+Log_1  :  ##################   spiselectscw_processing  begins   ##################
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : =============== Creates ScW fits file scw.fits.gz ================
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : PtgX masks initialisation
+Log_1  :  spiselectscw_processing : ScW data base /afs/ipp-garching.mpg.de/mpe/gamma/instruments/integral/data/databases/scw_params/revolutions.new/0043/ScWDataBase_rev0043.fits opened 
+Log_1  :  spiselectscw_processing : Initial number of rows : 177
+Log_1  :  select_num_col : selection on Revolution : 0 rows to be rejected out of 177 (0 new)
+Log_1  :  select_num_col : selection on ISOC_Pointing : 0 rows to be rejected out of 177 (0 new)
+Log_1  :  select_num_col : selection on ScwType : 86 rows to be rejected out of 177 (86 new)
+Log_1  :  select_OBT_col : selection on OBTStart : 0 rows to be rejected out of 177 (0 new)
+Log_1  :  select_OBT_col : selection on OBTEnd : 0 rows to be rejected out of 177 (0 new)
+Log_1  :  select_num_col : selection on TStart : 0 rows to be rejected out of 177 (0 new)
+Log_1  :  select_num_col : selection on TEnd : 0 rows to be rejected out of 177 (0 new)
+Log_1  :  select_bool_col : selection on ReadPrpSCHK : 8 rows to be rejected out of 177 (4 new)
+Log_1  :  select_num_col : selection on SPIMode : 10 rows to be rejected out of 177 (1 new)
+Log_1  :  select_num_col : selection on OrbitRevPhase : 18 rows to be rejected out of 177 (5 new)
+Log_1  :  select_num_col : selection on HVDetMean : 67 rows to be rejected out of 177 (0 new)
+Log_1  :  select_num_col : selection on FracGoodEvtsTot : 10 rows to be rejected out of 177 (0 new)
+Log_1  :  select_dble_col : selection on RA_SCX/DEC_SCX : 0 rows to be rejected out of 177 (0 new)
+Log_1  :  select_expr : selection on General Expression : 94 rows to be rejected out of 177 (9 new)
+Log_1  :  spiselectscw_processing : Selection from file /afs/ipp-garching.mpg.de/mpe/gamma/instruments/integral/data/databases/scw_params/revolutions.new/0043/ScWDataBase_rev0043.fits : 
+Log_1  :  spiselectscw_processing : 	 Selected number of rows : 72 (105 deleted)
+Log_1  :  spiselectscw_processing : 	 Total elapsed obs time : 159779.0882 s
+Log_1  :  spiselectscw_processing : ScW data base /afs/ipp-garching.mpg.de/mpe/gamma/instruments/integral/data/databases/scw_params/revolutions.new/0044/ScWDataBase_rev0044.fits opened 
+Log_1  :  spiselectscw_processing : Initial number of rows : 195
+Log_1  :  select_num_col : selection on Revolution : 0 rows to be rejected out of 195 (0 new)
+Log_1  :  select_num_col : selection on ISOC_Pointing : 0 rows to be rejected out of 195 (0 new)
+Log_1  :  select_num_col : selection on ScwType : 97 rows to be rejected out of 195 (97 new)
+Log_1  :  select_OBT_col : selection on OBTStart : 0 rows to be rejected out of 195 (0 new)
+Log_1  :  select_OBT_col : selection on OBTEnd : 0 rows to be rejected out of 195 (0 new)
+Log_1  :  select_num_col : selection on TStart : 0 rows to be rejected out of 195 (0 new)
+Log_1  :  select_num_col : selection on TEnd : 0 rows to be rejected out of 195 (0 new)
+Log_1  :  select_bool_col : selection on ReadPrpSCHK : 8 rows to be rejected out of 195 (4 new)
+Log_1  :  select_num_col : selection on SPIMode : 9 rows to be rejected out of 195 (0 new)
+Log_1  :  select_num_col : selection on OrbitRevPhase : 25 rows to be rejected out of 195 (8 new)
+Log_1  :  select_num_col : selection on HVDetMean : 75 rows to be rejected out of 195 (1 new)
+Log_1  :  select_num_col : selection on FracGoodEvtsTot : 8 rows to be rejected out of 195 (0 new)
+Log_1  :  select_dble_col : selection on RA_SCX/DEC_SCX : 0 rows to be rejected out of 195 (0 new)
+Log_1  :  select_expr : selection on General Expression : 103 rows to be rejected out of 195 (9 new)
+Log_1  :  spiselectscw_processing : Selection from file /afs/ipp-garching.mpg.de/mpe/gamma/instruments/integral/data/databases/scw_params/revolutions.new/0044/ScWDataBase_rev0044.fits : 
+Log_1  :  spiselectscw_processing : 	 Selected number of rows : 76 (119 deleted)
+Log_1  :  spiselectscw_processing : 	 Total elapsed obs time : 165671.0883 s
+Log_1  :  spiselectscw_processing : ScW data base /afs/ipp-garching.mpg.de/mpe/gamma/instruments/integral/data/databases/scw_params/revolutions.new/0045/ScWDataBase_rev0045.fits opened 
+Log_1  :  spiselectscw_processing : Initial number of rows : 193
+Log_1  :  select_num_col : selection on Revolution : 0 rows to be rejected out of 193 (0 new)
+Log_1  :  select_num_col : selection on ISOC_Pointing : 0 rows to be rejected out of 193 (0 new)
+Log_1  :  select_num_col : selection on ScwType : 94 rows to be rejected out of 193 (94 new)
+Log_1  :  select_OBT_col : selection on OBTStart : 0 rows to be rejected out of 193 (0 new)
+Log_1  :  select_OBT_col : selection on OBTEnd : 0 rows to be rejected out of 193 (0 new)
+Log_1  :  select_num_col : selection on TStart : 0 rows to be rejected out of 193 (0 new)
+Log_1  :  select_num_col : selection on TEnd : 0 rows to be rejected out of 193 (0 new)
+Log_1  :  select_bool_col : selection on ReadPrpSCHK : 8 rows to be rejected out of 193 (4 new)
+Log_1  :  select_num_col : selection on SPIMode : 9 rows to be rejected out of 193 (0 new)
+Log_1  :  select_num_col : selection on OrbitRevPhase : 27 rows to be rejected out of 193 (9 new)
+Log_1  :  select_num_col : selection on HVDetMean : 70 rows to be rejected out of 193 (0 new)
+Log_1  :  select_num_col : selection on FracGoodEvtsTot : 14 rows to be rejected out of 193 (0 new)
+Log_1  :  select_dble_col : selection on RA_SCX/DEC_SCX : 11 rows to be rejected out of 193 (0 new)
+Log_1  :  select_expr : selection on General Expression : 97 rows to be rejected out of 193 (7 new)
+Log_1  :  spiselectscw_processing : Selection from file /afs/ipp-garching.mpg.de/mpe/gamma/instruments/integral/data/databases/scw_params/revolutions.new/0045/ScWDataBase_rev0045.fits : 
+Log_1  :  spiselectscw_processing : 	 Selected number of rows : 79 (114 deleted)
+Log_1  :  spiselectscw_processing : 	 Total elapsed obs time : 166972.0858 s
+Log_1  :  spiselectscw_processing : Final number of rows : 227 (338 deleted)
+Log_1  :  spiselectscw_processing : Total elapsed obs time : 492422.2623 s
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file begins +++++++++++++++++++++
+Log_1  :  fits_close_select_file : Writting standard keywords and closing scw.fits.gz
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file ends +++++++++++++++++++++
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : =============== Fits file scw.fits.gz created ================
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : =============== Creates ScW list scw.list ================
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : =============== ScW list scw.list created ================
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : =============== Creates OG list og_list ================
+Log_1  :  spiselectscw_processing : 
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file begins +++++++++++++++++++++
+Log_1  :  fits_close_select_file : Writting standard keywords and closing og_list
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file ends +++++++++++++++++++++
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : =============== OG list og_list created ================
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : =============== Creates Observation Group and/or SwG index  ================
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : Loads 227 OBTranges from scw.fits.gz => 224 ranges after filtering with a tolerance of 1 s
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : =============== Creates Observation Group og_spi.fits ================
+Log_1  :  spiselectscw_processing : 
+Log_1  :  ++++++++++++++++ LoadOffDetInfo begins +++++++++++
+Log_1  :  ++++++++++++++++ LoadOffDetInfo ends +++++++++++++
+Log_1  :  spiselectscw_processing : Process OG for revolution 43
+Log_1  : +++++++++++++++++++++++++++ UpdateObs begins +++++++++++++++++++++
+Log_1  :  UpdateObs : Input group /afs/ipp-garching.mpg.de/mpe/gamma/instruments/integral/user_ref/Private_low/0043_std/og_spi.fits opened
+Log_1  :  UpdateObs : Load Input group members
+Log_1  :  UpdateObs : energy boundaries file opened
+Log_1  :  UpdateObs : pointing file opened
+Log_1  :  UpdateObs : GTI file opened
+Log_1  :  UpdateObs : det evts spectra file opened
+Log_1  :  UpdateObs : dead time file opened
+Log_1  :  UpdateObs : read 3964 initial energy bins
+Log_1  :  UpdateObs : Set  energy boundaries
+Log_1  : ++++++++++++++++++++++ RebinEnBounds begins +++++++++++++++++++++
+Log_1  :  RebinEnBounds : read 3964 initial bins
+Log_1  :  RebinEnBounds : built 50 output bins
+Log_1  :  RebinEnBounds : process output ebounds file
+Log_1  : ++++++++++++++++++++++ RebinEnBounds ends +++++++++++++++++++++
+Log_1  :  UpdateObs : 50 energy bins written
+Log_1  :  UpdateObs : Loads GTIs information
+Log_1  :  UpdateObs : Loads pointings information
+Log_1  :  UpdateObs : Process 6970 GTIs
+Log_1  :  UpdateObs :1368 new GTIs and 72 new pointings added
+Log_1  : ++++++++++++++++++++++ RebinEnBounds begins +++++++++++++++++++++
+Log_1  :  RebinEnBounds : read 3964 initial bins
+Log_1  :  RebinEnBounds : built 50 output bins
+Log_1  :  RebinEnBounds : process output detector spectra file
+Log_1  :  RebinEnBounds : 1368 GTIs to process
+Log_1  :  RebinEnBounds : loading 1/1368 GTIs in the same time
+Log_1  :  RebinEnBounds : close output HDU
+Log_1  : ++++++++++++++++++++++ RebinEnBounds ends +++++++++++++++++++++
+Log_1  :  UpdateObs : Update output keywords
+Log_1  :  UpdateObs : Close input files
+Log_1  : +++++++++++ UpdateObs ends with status 0 ++++++++++++
+Log_1  :  spiselectscw_processing : Process OG for revolution 44
+Log_1  : +++++++++++++++++++++++++++ UpdateObs begins +++++++++++++++++++++
+Log_1  :  UpdateObs : Input group /afs/ipp-garching.mpg.de/mpe/gamma/instruments/integral/user_ref/Private_low/0044_std/og_spi.fits opened
+Log_1  :  UpdateObs : Load Input group members
+Log_1  :  UpdateObs : energy boundaries file opened
+Log_1  :  UpdateObs : pointing file opened
+Log_1  :  UpdateObs : GTI file opened
+Log_1  :  UpdateObs : det evts spectra file opened
+Log_1  :  UpdateObs : dead time file opened
+Log_1  :  UpdateObs : read 3964 initial energy bins
+Log_1  :  UpdateObs : Loads GTIs information
+Log_1  :  UpdateObs : Loads pointings information
+Log_1  :  UpdateObs : Process 8500 GTIs
+Log_1  :  UpdateObs :1444 new GTIs and 76 new pointings added
+Log_1  : ++++++++++++++++++++++ RebinEnBounds begins +++++++++++++++++++++
+Log_1  :  RebinEnBounds : read 3964 initial bins
+Log_1  :  RebinEnBounds : built 50 output bins
+Log_1  :  RebinEnBounds : process output detector spectra file
+Log_1  :  RebinEnBounds : 1444 GTIs to process
+Log_1  :  RebinEnBounds : loading 1/1444 GTIs in the same time
+Log_1  :  RebinEnBounds : close output HDU
+Log_1  : ++++++++++++++++++++++ RebinEnBounds ends +++++++++++++++++++++
+Log_1  :  UpdateObs : Update output keywords
+Log_1  :  UpdateObs : Close input files
+Log_1  : +++++++++++ UpdateObs ends with status 0 ++++++++++++
+Log_1  :  spiselectscw_processing : Process OG for revolution 45
+Log_1  : +++++++++++++++++++++++++++ UpdateObs begins +++++++++++++++++++++
+Log_1  :  UpdateObs : Input group /afs/ipp-garching.mpg.de/mpe/gamma/instruments/integral/user_ref/Private_low/0045_std/og_spi.fits opened
+Log_1  :  UpdateObs : Load Input group members
+Log_1  :  UpdateObs : energy boundaries file opened
+Log_1  :  UpdateObs : pointing file opened
+Log_1  :  UpdateObs : GTI file opened
+Log_1  :  UpdateObs : det evts spectra file opened
+Log_1  :  UpdateObs : dead time file opened
+Log_1  :  UpdateObs : read 3964 initial energy bins
+Log_1  :  UpdateObs : Loads GTIs information
+Log_1  :  UpdateObs : Loads pointings information
+Log_1  :  UpdateObs : Process 8075 GTIs
+Log_1  :  UpdateObs :1463 new GTIs and 77 new pointings added
+Log_1  : ++++++++++++++++++++++ RebinEnBounds begins +++++++++++++++++++++
+Log_1  :  RebinEnBounds : read 3964 initial bins
+Log_1  :  RebinEnBounds : built 50 output bins
+Log_1  :  RebinEnBounds : process output detector spectra file
+Log_1  :  RebinEnBounds : 1463 GTIs to process
+Log_1  :  RebinEnBounds : loading 1/1463 GTIs in the same time
+Log_1  :  RebinEnBounds : close output HDU
+Log_1  : ++++++++++++++++++++++ RebinEnBounds ends +++++++++++++++++++++
+Log_1  :  UpdateObs : Update output keywords
+Log_1  :  UpdateObs : Close input files
+Log_1  : +++++++++++ UpdateObs ends with status 0 ++++++++++++
+Log_1  :  ++++++++++++++++ LoadOffDetInfo begins +++++++++++
+Log_1  :  ++++++++++++++++ LoadOffDetInfo ends +++++++++++++
+Log_1  :  ++++++++++++++++ SetOffDet begins +++++++++++
+Log_1  :  SetOffDet : Read 95 output rows at once
+Log_1  :  SetOffDet : Read and process output rows [ 1 - 95 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 96 - 190 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 191 - 285 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 286 - 380 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 381 - 475 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 476 - 570 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 571 - 665 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 666 - 760 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 761 - 855 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 856 - 950 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 951 - 1045 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 1046 - 1140 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 1141 - 1235 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 1236 - 1330 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 1331 - 1425 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 1426 - 1520 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 1521 - 1615 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 1616 - 1710 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 1711 - 1805 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 1806 - 1900 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 1901 - 1995 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 1996 - 2090 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 2091 - 2185 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 2186 - 2280 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 2281 - 2375 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 2376 - 2470 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 2471 - 2565 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 2566 - 2660 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 2661 - 2755 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 2756 - 2850 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 2851 - 2945 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 2946 - 3040 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 3041 - 3135 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 3136 - 3230 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 3231 - 3325 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 3326 - 3420 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 3421 - 3515 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 3516 - 3610 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 3611 - 3705 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 3706 - 3800 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 3801 - 3895 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 3896 - 3990 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 3991 - 4085 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 4086 - 4180 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  SetOffDet : Read and process output rows [ 4181 - 4275 ]/4275
+Log_1  :  SetOffDet : Found 0 rows to modify
+Log_1  :  ++++++++++++++++ SetOffDet ends +++++++++++
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file begins +++++++++++++++++++++
+Log_1  :  fits_close_select_file : Writting standard keywords and closing og_spi.fits
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file ends +++++++++++++++++++++
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file begins +++++++++++++++++++++
+Log_1  :  fits_close_select_file : Writting standard keywords and closing spi/pointing.fits.gz
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file ends +++++++++++++++++++++
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file begins +++++++++++++++++++++
+Log_1  :  fits_close_select_file : Writting standard keywords and closing spi/gti.fits.gz
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file ends +++++++++++++++++++++
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file begins +++++++++++++++++++++
+Log_1  :  fits_close_select_file : Writting standard keywords and closing spi/dead_time.fits.gz
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file ends +++++++++++++++++++++
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file begins +++++++++++++++++++++
+Log_1  :  fits_close_select_file : Writting standard keywords and closing spi/energy_boundaries.fits.gz
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file ends +++++++++++++++++++++
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file begins +++++++++++++++++++++
+Log_1  :  fits_close_select_file : Writting standard keywords and closing spi/evts_det_spec.fits.gz
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file ends +++++++++++++++++++++
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : =============== Observation Group og_spi.fits created ================
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : =============== Creates Exposure map expo_crab.fits ================
+Log_1  :  spiselectscw_processing : 
+Log_1  :  ++++++++++++++++ CreateExpoMap begins +++++++++++
+Log_1  :  ++++++++++++++++ CreateExpoMap ends +++++++++++
+Log_1  :  ++++++++++++++++ BuildExpoMapFromOG begins +++++++++++
+Log_1  :  ++++++++++++++++ BuildExpoMap begins +++++++++++
+Log_1  :  BuildExpoMap : Map WCS : GALACTIC, data WCS : J2000
+Log_1  :  BuildExpoMap : Read pointing data [1-225]/225
+Log_1  :  ++++++++++++++++ BuildExpoMap ends +++++++++++
+Log_1  :  ++++++++++++++++ BuildExpoMapFromOG ends +++++++++++
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file begins +++++++++++++++++++++
+Log_1  :  fits_close_select_file : Writting standard keywords and closing expo_crab.fits
+Log_1  : +++++++++++++++++++++++++++ fits_close_select_file ends +++++++++++++++++++++
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : =============== Exposure map expo_crab.fits created ================
+Log_1  :  spiselectscw_processing : 
+Log_1  :  spiselectscw_processing : 
+Log_1  :  ##################   spiselectscw_processing  ends    ##################
+Log_1  :  spiselectscw_processing : 
+Log_1  : ====================================================
+Log_1  : |    spiselectscw v 4.02 ended with status      0. |
+Log_1  : |  Used     22.100 sec CPU time                    |
+Log_1  : ====================================================
+Tue Jul  3 17:11:07 CEST 2018
